@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Paper Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🔬 AI Research Paper Generator</h1>
+        <p>Advanced pipeline for generating comprehensive research papers with academic citations</p>
+    </header>
+
+    <div class="container">
+        <div class="input-section">
+            <h2>📝 Paper Configuration</h2>
+
+            <label>Research Topic *</label>
+            <input type="text" id="topic" placeholder="e.g., 'Machine Learning in Healthcare'">
+
+            <label>Focus Area (Optional)</label>
+            <input type="text" id="focus" placeholder="e.g., 'recent developments'">
+
+            <label>Paper Type</label>
+            <select id="paperType">
+                <option value="Research Paper">Generate Research Paper</option>
+                <option value="Literature Survey">Literature Survey</option>
+            </select>
+
+            <button id="generateBtn">Generate Paper</button>
+        </div>
+
+        <div class="output-section">
+            <h2>📄 Generated Paper</h2>
+            <div id="loading" class="loading" style="display:none;"></div>
+            <div id="paper-output" class="paper-content">Enter a topic to generate your research paper</div>
+            <div class="actions">
+                <button id="downloadBtn" disabled>Download</button>
+                <button id="resetBtn" disabled>Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
